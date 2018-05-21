@@ -1,0 +1,194 @@
+h4 {
+
+font-family: 'Antic';
+
+font-size:20px;
+
+
+}
+
+h2 {
+
+font-family: 'Antic';
+
+font-size:24px;
+
+
+}
+
+
+
+.modal-header{
+background-color: #00BCD4;
+}
+#myModalLabel{
+color : white;
+font-weight: bold;
+font-size: 20px;
+}
+.top-bar1{
+	
+float: left;
+width: 100%;
+line-height: normal;
+background-color: #00BCD4;
+font-weight: bold;
+}
+
+.contact_top_bar{
+	
+color: #fff;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	display: block;
+	padding:11px 0; 
+	font-weight: bold;
+
+}
+.top_nav ,.lng_wrap {
+	float: right;
+}
+
+.login_wrap{
+	float: right;
+}
+.login_wrap li{
+	display:inline-block;
+}
+.login_wrap li a{
+	color: #fff;
+	font-size: 14px;
+	text-transform: capitalize;
+	display: block;
+	padding:10px 12px 8px; 
+}
+.login_wrap li i{
+	float: left;
+	margin:3px 5px 0px 0px;
+
+}
+.login_wrap li a:hover{
+	text-decoration: underline;
+}
+.top_nav{
+	float: left;
+	display: inline-block;
+}
+.top_nav li{
+	display: inline-block;
+}
+.top_nav li a{
+	color: #FFF;
+	font-size: 14px;
+	text-transform: capitalize;
+	display: block;
+	padding:10px 12px 8px; 
+	
+	position: relative;
+
+}
+.top_nav li a:hover{
+	background-color: #00BCD4;
+	color: blue;
+	opacity: 1
+}
+.test li a:hover{
+
+	background-color: #00BCD4;
+}
+.test li a{
+color: black;
+display: block;
+}
+
+.VOLP_navigation{
+	float: left;
+	width: 100%;
+	background: #fff;
+	position: relative;
+}
+.VOLP_navigation .
+{
+
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	right: 15px;
+}
+
+
+.logo_wrap{
+	float: left;
+	width: 100%;
+	padding:22px 0; 
+}
+
+}
+
+.text_prop
+{
+color:green; 
+
+}
+.inner{
+	margin-top:10px;
+ 
+	
+}
+.inner>.item>img{
+
+    width:100%;
+	max-height:250px;  
+  
+}
+
+
+
+/* Search box*/
+.container1{
+
+margin-top: 5px;
+margin-right:10px;
+
+}
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 2px #00BCD4;
+    border-radius: 6px;
+    background-color: #00BCD4;
+}
+
+#custom-search-input input{
+    border: 2px;
+    box-shadow: #00BCD4;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+/* Search box end*/
+
+.error{
+color: red;
+font-style: oblique;
+}
+
+

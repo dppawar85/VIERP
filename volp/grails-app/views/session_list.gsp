@@ -1,0 +1,9 @@
+email
+uid
+coursecodecoursename
+coursecode
+coursename
+courseoutlineid
+ay
+courseoutline
+coursetopic
