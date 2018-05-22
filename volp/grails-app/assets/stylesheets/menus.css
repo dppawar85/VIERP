@@ -1,0 +1,37 @@
+.navigation {
+  width: 210px;
+}
+.mainmenu, .submenu {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mainmenu .catMenu{
+font-size: 15px; width: 100%;font-style: bold;
+}
+.submenu .catMenu{
+font-size: 12px; width: 100%;font-style: normal;text-decoration: underline;
+}
+.mainmenu a {
+   display: block;
+   text-decoration: none;
+
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    //background-color: #C5C5C5;
+}
+
+.mainmenu li:hover .submenu {
+    max-height: 300px;
+}
+
+.submenu {
+  overflow: hidden;
+
+  width: 100%;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}

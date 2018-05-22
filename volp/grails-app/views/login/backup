@@ -1,0 +1,48 @@
+<div id="fb-root"></div>
+<script type="text/javascript">
+//<![CDATA[
+window.fbAsyncInit = function() {
+   FB.init({
+     appId      : '177004436234883', // App ID
+     channelURL : '', // Channel File, not required so leave empty
+     status     : true, // check login status
+     cookie     : true, // enable cookies to allow the server to access the session
+     oauth      : true, // enable OAuth 2.0
+     xfbml      : true  // parse XFBML
+   });
+};
+// logs the user in the application and facebook
+function login(){
+FB.getLoginStatus(function(r){
+
+     if(r.status === 'connected'){
+
+     FB.api('/me', 'GET', {fields: 'first_name,last_name,name,id,picture.width(150).height(150)'}, function(response) {
+     				document.getElementById('status').innerHTML = "<img src='" + response.picture.data.url + "'>";
+     			});
+
+            //window.location.href = 'http://localhost:8080/login/processfblogin';
+     }else{
+
+        FB.login(function(response) {
+
+                if(response.authResponse) {
+              //if (response.perms)
+                    //window.location.href = 'http://localhost:8080/login/processfblogin';
+            } else {
+              // user is not logged in
+            }
+     },{scope:'email'}); // which data to access from user profile
+ }
+});
+}
+// Load the SDK Asynchronously
+(function() {
+   var e = document.createElement('script'); e.async = true;
+   e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+   document.getElementById('fb-root').appendChild(e);
+}());
+//]]>
+</script>
+<a href='#' onclick='login();'>Facebook Login</a>
+<div id="status"><div>
